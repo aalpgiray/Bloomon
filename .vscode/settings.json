@@ -16,6 +16,7 @@
     "autoUpdateTime": 2000,
     "showDebugTestStatus": true
   },
-  "mocha.files.glob": "tests/**/*.ts",
-  "mocha.runTestsOnSave": "true"
+  "mocha.files.glob": "test/**/*.ts",
+  "mocha.runTestsOnSave": "true",
+  "mocha.parallelTests": 8
 }
