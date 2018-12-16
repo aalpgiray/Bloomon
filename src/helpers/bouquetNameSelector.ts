@@ -8,11 +8,12 @@ export default function bouquetNameSelector(spec: string): string {
    * Bouquet name must be single upper case letter
    * Bouquet size must fallow bouquet name. However, this control migth not be required here.
    */
-  const expression = /^([A-Z])(S|L).+/;
+  const expression = /^[A-Z]/;
+  const match = spec.match(expression);
 
-  if (!spec.match(expression)) {
-    throw new Error("Specification is faulty");
+  if (!match) {
+    throw new Error("Specification is not starting with bouquet name");
   }
 
-  return spec.replace(expression, "$1");
+  return match[0];
 }
