@@ -1,7 +1,5 @@
-interface IFlowerSpec {
-  count: number;
-  specie: string;
-}
+import { IFlowerSpec } from "../bouquet/Bouquet";
+
 /**
  * Extracts flower specifications from bouquet specification.
  * @param spec Bouquet specification
