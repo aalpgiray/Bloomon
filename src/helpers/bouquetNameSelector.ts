@@ -5,5 +5,5 @@ export default function bouquetNameSelector(spec: string): string {
     throw new Error("Specification is faulty");
   }
 
-  return spec.replace(/^([A-Z]).+/, "$1");
+  return spec.replace(expression, "$1");
 }
