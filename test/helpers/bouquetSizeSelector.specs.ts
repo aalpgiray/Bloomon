@@ -1,13 +1,12 @@
 import chai from "chai";
-import bouquetSizeSelector, {
-  BouquetSize
-} from "../../src/helpers/bouquetSizeSelector";
+import Size from "../../src/enums/Size";
+import bouquetSizeSelector from "../../src/helpers/bouquetSizeSelector";
 
 const should = chai.should();
 
 describe("bouquetSizeSelector", function() {
   it("should return bouquet size", function() {
-    const bouquetSize: BouquetSize = bouquetSizeSelector("AS8d10r5t30");
+    const bouquetSize: Size = bouquetSizeSelector("AS8d10r5t30");
     bouquetSize.should.be.equal("S");
   });
   it("should throw when size is not exists", function() {
