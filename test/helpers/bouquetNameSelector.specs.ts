@@ -9,9 +9,9 @@ describe("bouquetNameSelector", function() {
 
     bouquetName.should.be.equal("A");
   });
-  it("should throw when spec is faulty", function() {
+  it("should throw when spec is not started with bouquet name", function() {
     should.throw(function() {
-      bouquetNameSelector("L8d10r5t30");
+      bouquetNameSelector("8d10r5t30");
     });
   });
 });
