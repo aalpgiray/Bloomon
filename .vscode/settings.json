@@ -12,7 +12,7 @@
   },
   "mocha.sideBarOptions": {
     "lens": true,
-    "decoration": true,
+    "decoration": false,
     "autoUpdateTime": 2000,
     "showDebugTestStatus": true
   },
